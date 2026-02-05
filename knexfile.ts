@@ -1,7 +1,9 @@
+import 'dotenv/config'
+
 export default {
   client: 'sqlite3',
   connection: {
-    filename: './db/app.db'
+    filename: process.env.DATABASE_URL
   },
   useNullAsDefault: true,
   migrations: {
