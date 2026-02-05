@@ -1,9 +1,12 @@
 import fastify from 'fastify'
+import { knex } from './knex'
 
 const app = fastify()
 
-app.get('/hello', () => {
-  return 'Hello World!'
+app.get('/hello', async () => {
+  const tables = await knex('tables').select()
+
+  return tables
 })
 
 app
