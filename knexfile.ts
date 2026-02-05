@@ -1,15 +1,15 @@
 export default {
   client: 'sqlite3',
   connection: {
-    filename: './src/database/app.db'
+    filename: './db/app.db'
   },
   useNullAsDefault: true,
   migrations: {
     extensions: 'ts',
-    directory: './src/database/migrations'
+    directory: './db/migrations'
   },
   seeds: {
     extensions: 'ts',
-    directory: './src/database/seeds'
+    directory: './db/seeds'
   }
 }
