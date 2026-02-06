@@ -3,7 +3,7 @@
 ## RF (Requisitos Funcionais): Características que devem ser atendidas para atingir os objetivos da aplicação.
 
 - [x] O usuário deve poder criar uma nova transação;
-- [ ] O usuário deve poder obter um resumo de sua conta;
+- [x] O usuário deve poder obter um resumo de sua conta;
 - [x] O usuário deve poder listar todas as transações que já ocorreram;
 - [x] O usuário deve poder visualizar uma transação única;
 
