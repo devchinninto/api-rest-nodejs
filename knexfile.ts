@@ -1,10 +1,13 @@
 import { env } from './src/env/index'
 
 export default {
-  client: 'sqlite3',
-  connection: {
-    filename: env.DATABASE_URL
-  },
+  client: env.DATABASE_CLIENT,
+  connection:
+    env.DATABASE_CLIENT === 'sqlite'
+      ? {
+          filename: env.DATABASE_URL
+        }
+      : env.DATABASE_URL,
   useNullAsDefault: true,
   migrations: {
     extensions: 'ts',
